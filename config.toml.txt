@@ -1,0 +1,6 @@
+[theme]
+primaryColor="#005f6b"
+backgroundColor="#f0f2f6"
+secondaryBackgroundColor="#e8f5e9"
+textColor="#262730"
+font="sans serif"
