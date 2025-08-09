@@ -102,7 +102,7 @@ def main():
             ]
         st.session_state.current = 0
         st.session_state.errors = []
-        st.experimental_rerun()
+        st.rerun() # CORREÇÃO AQUI
 
     if st.session_state.get("questions"):
         q_idx = st.session_state.current
@@ -123,7 +123,7 @@ def main():
                         else:
                             st.write("Fim das questões! Parabéns.")
                             st.session_state.questions = [] 
-                        st.experimental_rerun()
+                        st.rerun() # CORREÇÃO AQUI
                     else:
                         st.error(f"Você errou! A resposta correta era {gabarito}.")
                         st.session_state.errors.append(q_idx)
@@ -139,7 +139,7 @@ def main():
                                 q_idx + 1, new_q
                             )
                             st.session_state.current += 1
-                            st.experimental_rerun()
+                            st.rerun() # CORREÇÃO AQUI
             else:
                 st.warning("Não foi possível carregar as alternativas. Tente gerar novas questões.")
 
